@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LibeTravel</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+<header class="header">
+    <nav class="navbar">
+        <ul class="lista_nav">
+            <li class="item_lista_nav"><a href="#inicio">Inicio</a></li>
+            <li class="item_lista_nav"><a href="passagens">Passagens</a></li>
+            <li class="item_lista_nav"><a href="sobre">Sobre</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <div class="container">
+        <div class="formulario">
+            <div>
+                <label for="passageiro">Quantidade de Passageiros</label>
+                <input type="number" id="passageiro" name="passageiro" min="1" placeholder="Ex: 2">
+            </div>
+            <div>
+                <label for="tipo">Tipo de Viagem</label>
+                <select id="tipo" name="tipo">
+                    <option>Ida</option>
+                    <option>Ida e Volta</option>
+                </select>
+            </div>
+            <div>
+                <label for="origem">Origem</label>
+                <input type="text" id="origem" name="origem" placeholder="Ex: São Paulo">
+            </div>
+            <div>
+                <label for="destino">Destino</label>
+                <input type="text" id="destino" name="destino" placeholder="Ex: Rio de Janeiro">
+            </div>
+            <div>
+                <label for="data">Data</label>
+                <input type="date" id="data" name="data">
+            </div>
+            <div style="grid-column: span 3; text-align: center;">
+                <button>Procurar voos</button>
+            </div>
+        </div>
+        <div class="tabela-container">
+            <table>
+                <thead>
+                <tr>
+                    <th>Companhia</th>
+                    <th>Data</th>
+                    <th>Horário</th>
+                    <th>Embarque</th>
+                    <th>Desembarque</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Latam Airlines</td>
+                    <td>20/11/2024</td>
+                    <td>08:00</td>
+                    <td>São Paulo</td>
+                    <td>Rio de Janeiro</td>
+                </tr>
+                <tr>
+                    <td>Azul Airlines</td>
+                    <td>20/11/2024</td>
+                    <td>12:00</td>
+                    <td>São Paulo</td>
+                    <td>Rio de Janeiro</td>
+                </tr>
+                <tr>
+                    <td>Gol Aviação</td>
+                    <td>20/11/2024</td>
+                    <td>16:00</td>
+                    <td>São Paulo</td>
+                    <td>Rio de Janeiro</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</main>
+<footer>
+    <p>Projeto para a matéria de POO II</p>
+    <p>&copy; 2024 LibeTravel. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>
